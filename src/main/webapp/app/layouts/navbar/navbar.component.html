@@ -1,4 +1,5 @@
-<nav class="navbar navbar-dark navbar-expand-md jh-navbar">
+
+<nav class="navbar navbar-light navbar-expand-md jh-navbar fixed-top bg-light">
     <div class="jh-logo-container float-left">
         <a class="jh-navbar-toggler d-lg-none float-right" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
             <i class="fa fa-bars"></i>
@@ -15,6 +16,27 @@
                     <span>
                         <i class="fa fa-home" aria-hidden="true"></i>
                         <span jhiTranslate="global.menu.home">Home</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <span>
+                        <span>About Us</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <span>
+                        <span>Syllabus</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <span>
+                        <span>Contact Us</span>
                     </span>
                 </a>
             </li>
@@ -146,3 +168,47 @@
         </ul>
     </div>
 </nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner" >
+        <div class="carousel-item active">
+            <img style="width: 100%; height: auto" class="d-block" src="../../../content/images/coverNew1.jpg" alt="First slide">
+        </div>
+
+        <div class="carousel-item">
+            <img style="width: 100%; height: auto" class="d-block" src="../../../content/images/coverNew2.jpeg" alt="Second slide">
+        </div>
+
+        <div class="carousel-item">
+            <img style="width: 100%; height: auto" class="d-block img-fluid" src="../../../content/images/coverNew3.jpeg" alt="Third slide">
+        </div>
+
+        <div class="carousel-item">
+            <img style="width: 100%; height: auto" class="d-block img-fluid" src="../../../content/images/coverNew4.jpeg" alt="Fourth slide">
+        </div>
+
+        <div class="carousel-item">
+            <img style="width: 100%; height: auto" class="d-block img-fluid" src="../../../content/images/coverNew5.jpeg" alt="Fifth slide">
+        </div>
+
+        <div class="carousel-item">
+            <img style="width: 100%; height: auto" class="d-block img-fluid" src="../../../content/images/coverNew6.jpg" alt="Sixth slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

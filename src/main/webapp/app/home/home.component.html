@@ -1,10 +1,14 @@
+
 <div class="row">
-    <div class="col-md-3">
-        <span class="hipster img-fluid rounded"></span>
-    </div>
-    <div class="col-md-9">
-        <h1 class="display-4" jhiTranslate="home.title">Welcome, Java Hipster!</h1>
-        <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>
+<div class="col-md-12">
+    <h1 class="display-4" style="text-align: center;color: #174873">Welcome to SARVM Scholarship Scheme!</h1>
+    <p class="lead" style="text-align: center;color: #174873">A learning community dedicated to building respectful and responsible citizens and empowering all learners.</p>
+</div>
+</div>
+<br><br>
+
+<div class="row">
+    <div class="col-md-6">
 
         <div [ngSwitch]="isAuthenticated()">
             <div class="alert alert-success" *ngSwitchCase="true">
@@ -12,30 +16,79 @@
                     translateValues="{username: '{{account.login}}'}"> You are logged in as user "{{account.login}}". </span>
             </div>
 
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to </span>
-                <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign in</a><span jhiTranslate="global.messages.info.authenticated.suffix">, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
-            </div>
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>
-                <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
-            </div>
+            <!--<div class="alert alert-warning" *ngSwitchCase="false">-->
+                <!--<span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>-->
+                <!--<a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a new account</a>-->
+            <!--</div>-->
         </div>
 
-        <p jhiTranslate="home.question">
-            If you have any question on JHipster:
-        </p>
-
-        <ul>
-            <li><a href="http://www.jhipster.tech/" target="_blank" rel="noopener" jhiTranslate="home.link.homepage">JHipster homepage</a></li>
-            <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" jhiTranslate="home.link.stackoverflow">JHipster on Stack Overflow</a></li>
-            <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" jhiTranslate="home.link.bugtracker">JHipster bug tracker</a></li>
-            <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" jhiTranslate="home.link.chat">JHipster public chat room</a></li>
-            <li><a href="https://twitter.com/java_hipster" target="_blank" rel="noopener" jhiTranslate="home.link.follow">follow @java_hipster on Twitter</a></li>
-        </ul>
-
-        <p>
-            <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener" jhiTranslate="home.github">GitHub</a>!
+        <h2 style="color: #174873;
+                   font-size: 34px;
+                   font-weight: 600;
+                   margin: 0 0 20px 0;
+                   padding-bottom: 5px">
+            About SARVM
+        </h2>
+        <p style="font-size: 1.2em;
+                  color: #686969;
+                  line-height: 21px;
+                  letter-spacing: 0.25px;
+                  text-align: justify;
+                  display: block">
+            Sarvm scholarship scheme aims to give scholarship to those students who are well
+            capable to achieve their goals but they don't have enough money to fund their education.
+            sarvm scholarship scheme tries to be your helping hand so that students who are capable,
+            don't have to face difficulties in achieving goals. Government organisations are giving
+            many scholarship on the basis of caste and creed but Sarvm scholarship scheme gives fair
+            chance to every student who are in need of money for achieving their goals. Sarvm
+            scholarship scheme is conducting a examination in whole bihar and on the basis of this
+            examination we are going to give scholarship to meritious student.
         </p>
     </div>
+
+    <div class="col-md-1"></div>
+    <div class="col-md-2" style="margin-top: 4rem">
+        <div class="row">
+            <button class="btn btn-primary" style="width: 80%">Register Now</button>
+        </div>
+        <div class="row" style="margin-top: 1rem;text-align: center">
+            <p style="width: 80%;
+                      color: #174873;
+                      font-size: 24px;
+                      font-weight: 600;">OR</p>
+        </div>
+        <div class="row">
+            <button class="btn btn-info" style="width: 80%">Sign in</button>
+        </div>
+    </div>
+
+    <div class="col-md-2" style="border: solid 2px black; margin-left: 2rem; padding: 0">
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="background-color: #337ab7">
+                <h3 class="panel-title" style="color: white; text-align: center">Latest News</h3>
+            </div>
+        </div>
+        <ul>
+            <marquee direction="up" scrollamount="5">
+                <li>
+                    <a href="#">News 1</a>
+                </li>
+                <li>
+                    <a href="#">News 2</a>
+                </li>
+                <li>
+                    <a href="#">News 3</a>
+                </li>
+                <li>
+                    <a href="#">News 4</a>
+                </li>
+                <li>
+                    <a href="#">News 5</a>
+                </li>
+            </marquee>
+        </ul>
+    </div>
 </div>
+
+
+
